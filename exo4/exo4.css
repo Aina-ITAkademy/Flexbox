@@ -13,10 +13,18 @@ footer {
     border-style: solid;
 }
 
-li {
+ul {
+    display: flex;
+    flex-direction: column;
+    /* Les navigateur ajoutes du margin/padding pour les listes*/
+    margin: 0; /* To remove default bottom margin */ 
+    padding: 0; /* To remove default left padding */
+}
+
+ul li {
     list-style-type: none;
-    align-content:center;
-    width:100%;
+    width: 100%;
+    
 }
 
 li a {
@@ -24,20 +32,25 @@ li a {
     font-weight: bold;
     color:white;
 }
+
+
 #main-section{
     border-style: solid;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 #menu-section {
     border-style: solid;
     background-color: blueviolet;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: column; 
     
 }
+#menu-section h2 {
+    text-align: center;
+}
+
 #content-section {
     border-style: solid;
     background-color: lightcoral;
@@ -47,4 +60,5 @@ li a {
     border-style: solid;
     background-color: blueviolet;
 }
+
 
